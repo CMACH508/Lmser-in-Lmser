@@ -1,32 +1,40 @@
-ÏîÄ¿Ä¿Â¼Çé¿ö£º
+é¡¹ç›®ç›®å½•æƒ…å†µï¼š
 Lmser_in_Lmser......
-    ......data                       ###Êı¾İ¼¯»®·ÖtxtÎÄ¼ş´æ·ÅÄ¿Â¼
-    ......model                      ###Ä£ĞÍÊµÏÖÎÄ¼ş´æ·ÅÄ¿Â¼
-    ......NLDA                       ###matlabÓÃÀ´²âÊÔNLDAÖ¸±êµÄÎÄ¼şÄ¿Â¼£¬ĞèÒªµ¥¶ÀÔÚ·şÎñÆ÷ÉÏÓÃmatlabÃüÁîµ÷ÓÃ£¬ÊÂÏÈĞèÒªÉèÖÃºÃ²âÊÔµÄ·½·¨
-    ......pytorch_fid                ###FIDÖ¸±êpytorchÊµÏÖÎÄ¼ş´æ·ÅÄ¿Â¼£¬²»ĞèÒªµ¥¶ÀÔËĞĞ£¬µ÷ÓÃ¾Í¿ÉÒÔ
-    ......util                       ###Êı¾İÔ¤´¦ÀíÊµÏÖ·½·¨ËùÔÚÄ¿Â¼
-    FeatureSIM.m                     ###²âÊÔFSIMÖ¸±êÊµÏÖ·½·¨ÎÄ¼ş£¬²»ĞèÒªµ¥¶ÀÔËĞĞ£¬test_Method.pyµ÷ÓÃ
-    option.py                        ###»·¾³²ÎÊıÎÄ¼ş###
-    test_Method.py                   ###²âÊÔFID¡¢FSIMÖ¸±ê·½·¨
-    test_lmser_in_lmser.py           ###Ä£ĞÍ²âÊÔÎÄ¼ş£¬¸ù¾İ²âÊÔ¼¯ÈËÁ³ÕÕÆ¬Éú³ÉËØÃèÍ¼Æ¬£¬ÓÃÓÚtest_Method.py²âÊÔ¾ßÌåÖ¸±ê
-    train_lmser_in_lmser.py          ###Ä£ĞÍÑµÁ·ÎÄ¼ş
+    ......data                       ###æ•°æ®é›†åˆ’åˆ†txtæ–‡ä»¶å­˜æ”¾ç›®å½•
+    ......model                      ###æ¨¡å‹å®ç°æ–‡ä»¶å­˜æ”¾ç›®å½•
+    ......NLDA                       ###matlabç”¨æ¥æµ‹è¯•NLDAæŒ‡æ ‡çš„æ–‡ä»¶ç›®å½•ï¼Œéœ€è¦å•ç‹¬åœ¨æœåŠ¡å™¨ä¸Šç”¨matlabå‘½ä»¤è°ƒç”¨ï¼Œäº‹å…ˆéœ€è¦è®¾ç½®å¥½æµ‹è¯•çš„æ–¹æ³•
+    ......pytorch_fid                ###FIDæŒ‡æ ‡pytorchå®ç°æ–‡ä»¶å­˜æ”¾ç›®å½•ï¼Œä¸éœ€è¦å•ç‹¬è¿è¡Œï¼Œè°ƒç”¨å°±å¯ä»¥
+    ......util                       ###æ•°æ®é¢„å¤„ç†å®ç°æ–¹æ³•æ‰€åœ¨ç›®å½•
+    FeatureSIM.m                     ###æµ‹è¯•FSIMæŒ‡æ ‡å®ç°æ–¹æ³•æ–‡ä»¶ï¼Œä¸éœ€è¦å•ç‹¬è¿è¡Œï¼Œtest_Method.pyè°ƒç”¨
+    option.py                        ###ç¯å¢ƒå‚æ•°æ–‡ä»¶###
+    test_Method.py                   ###æµ‹è¯•FIDã€FSIMæŒ‡æ ‡æ–¹æ³•
+    test_lmser_in_lmser.py           ###æ¨¡å‹æµ‹è¯•æ–‡ä»¶ï¼Œæ ¹æ®æµ‹è¯•é›†äººè„¸ç…§ç‰‡ç”Ÿæˆç´ æå›¾ç‰‡ï¼Œç”¨äºtest_Method.pyæµ‹è¯•å…·ä½“æŒ‡æ ‡
+    train_lmser_in_lmser.py          ###æ¨¡å‹è®­ç»ƒæ–‡ä»¶
 
 
-Ïà¹ØÃüÁî¾ÙÀı£º
-ÑµÁ·£º
-    source activate py36             ###¼¤»îcondaÖĞµÄpy36»·¾³
-    tmux »ò tmux a                   ###´ò¿ªtmuxÖÕ¶Ë¸´ÓÃÆ÷ÓÃÓÚºóÌ¨ÑµÁ·Ä£ĞÍ
+ç›¸å…³å‘½ä»¤ä¸¾ä¾‹ï¼š
+è®­ç»ƒï¼š
+    source activate py36             ###æ¿€æ´»condaä¸­çš„py36ç¯å¢ƒ
+    tmux æˆ– tmux a                   ###æ‰“å¼€tmuxç»ˆç«¯å¤ç”¨å™¨ç”¨äºåå°è®­ç»ƒæ¨¡å‹
     python train_lmser_in_lmser.py --gpu "0,1" --data_type CUFS --sub_node lmserinlmser_cufs
-                                     ###ÔËĞĞÑµÁ·Ä£ĞÍ½ø³Ì£¬Àı×ÓÖĞÖ÷ÒªÉèÖÃÁËgpu£¬Êı¾İ¼¯ÀàĞÍ£¬Ä£ĞÍ±£´æÂ·¾¶(¼´²âÊÔÊ±µÄ·½·¨Ãû)
-                                     ###¾ßÌå¿É¼ûoption.pyÎÄ¼ş
+                                     ###è¿è¡Œè®­ç»ƒæ¨¡å‹è¿›ç¨‹ï¼Œä¾‹å­ä¸­ä¸»è¦è®¾ç½®äº†gpuï¼Œæ•°æ®é›†ç±»å‹ï¼Œæ¨¡å‹ä¿å­˜è·¯å¾„(å³æµ‹è¯•æ—¶çš„æ–¹æ³•å)
+                                     ###å…·ä½“å¯è§option.pyæ–‡ä»¶
     python train_lmser_in_lmser.py --gpu "0,1" --data_type CUFS --sub_node lmserinlmser_cufs --resume_training 1
-                                     ###ÖØÆôÑµÁ·½ø³Ì£¬ÓÉÓÚAPIÎÊÌâ£¬resume_trainingµÈboolÀàĞÍ²ÎÊıĞèÒªÉèÖÃÄ¬ÈÏÖµÎªfalse
-                                     ###ÔÚĞèÒªÉèÖÃÎªtrueÊ±£¬Ö»ÒªÓÃ--resume_training + Ëæ±ãÒ»¸öÖµ¾Í¿ÉÒÔ
-²âÊÔ£º
+                                     ###é‡å¯è®­ç»ƒè¿›ç¨‹ï¼Œç”±äºAPIé—®é¢˜ï¼Œresume_trainingç­‰boolç±»å‹å‚æ•°éœ€è¦è®¾ç½®é»˜è®¤å€¼ä¸ºfalse
+                                     ###åœ¨éœ€è¦è®¾ç½®ä¸ºtrueæ—¶ï¼Œåªè¦ç”¨--resume_training + éšä¾¿ä¸€ä¸ªå€¼å°±å¯ä»¥
+æµ‹è¯•ï¼š
     python test_lmser_in_lmser.py --gpu XX --sub_node XX --data_type XX
-                                     ###Ö»ÓĞÕâÈıÖÖ²ÎÊı£¬Óëoption.pyÃ»ÓĞ¹ØÏµ¡£Í¨³£±¾»úIDEÔËĞĞ¼´¿É£¬²»ĞèÒªÔÚ·şÎñÆ÷ÉÏÓÃÃüÁîĞĞÔËĞĞ
-    python test_Method.py            ###±¾»úIDEÔËĞĞ
+                                     ###åªæœ‰è¿™ä¸‰ç§å‚æ•°ï¼Œä¸option.pyæ²¡æœ‰å…³ç³»ã€‚é€šå¸¸æœ¬æœºIDEè¿è¡Œå³å¯ï¼Œä¸éœ€è¦åœ¨æœåŠ¡å™¨ä¸Šç”¨å‘½ä»¤è¡Œè¿è¡Œ
+    python test_Method.py            ###æœ¬æœºIDEè¿è¡Œ
     /data/shengqingjie/matlab/bin/matlab -nodisplay -r NLDA_multiple.m
     /data/shengqingjie/matlab/bin/matlab -nodisplay -r NLDA_single.m
-                                     ###²âÊÔNLDAÖ¸±ê£¬ĞèÒªÏÈcdµ½NLDA_multiple.m¡¢NLDA_single.mËùÔÚÄ¿Â¼£¬²»ÄÜÔÚtmuxÖÕ¶ËÔËĞĞ
+                                     ###æµ‹è¯•NLDAæŒ‡æ ‡ï¼Œéœ€è¦å…ˆcdåˆ°NLDA_multiple.mã€NLDA_single.mæ‰€åœ¨ç›®å½•ï¼Œä¸èƒ½åœ¨tmuxç»ˆç«¯è¿è¡Œ
 
+ç›¸å…³ä¸‹è½½ï¼š
+Datasets
+link: https://pan.baidu.com/s/1Q5HaaZ6Gxrh43lIQBUa_Dg 
+access code: szmv
+
+Trained Model:
+link: https://pan.baidu.com/s/11rPDV87zC_Ot14zLyozGjw 
+access code: ysnt
